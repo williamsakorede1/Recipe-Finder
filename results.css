@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(243, 219, 185);
+}
+.error{
+    text-align: center;
+    margin-top: 15px;
+    color: red;
+    display: block;
+}
+#navbar {
+    width: 100%;
+    height: auto;
+    padding: 15px 0px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.yellow{
+    color: rgb(227, 210, 84);
+}
+/* Styling the navbar Links */
+#navbarLinks a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+#navbarLinks a:not(#home):hover{
+    color:rgb(227, 210, 84) ;
+}
+#home span:hover{
+    color: white;
+}
+.results{
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+
+}
+#searchInput{
+    width: 250px;
+    height: 30px;
+    background-color: rgb(250, 220, 118);
+    border: 0;
+    outline: 0;
+    padding: 8px;
+}
+#searchInput:hover{
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+#searchForm{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+#searchBtn{
+    padding: 8px;
+    margin-top: px;
+    height: 30px;
+    background-color:rgb(250, 220, 118) ;
+    border: none;
+    border-radius: 5px;
+}
+#searchBtn:hover{
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+#getStartedBtn a {
+   cursor: pointer;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.generalContainer{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.edit {
+    height: auto;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(227, 210, 84);
+    padding: 20px;
+    text-align: center;
+}
+.imageStyle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -6px;
+    margin-bottom: 10px;
+}
+.imageStyle:hover{
+    outline: 2px solid black;
+    outline-offset: 5px;
+}
+.headerStyle{
+    font-size: larger;
+}
+.linkStyle{
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    transition: 1s;
+}
+.linkStyle:hover{
+    background-color: rgb(50, 48, 48);
+}
+
+.footer{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.backLink{
+    text-decoration: none;
+    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    width: auto;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.backLink:hover{
+    background-color: rgb(50, 48, 48);
+
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 760px){
+    #heroSectionImage img{
+        width: 300px;
+    }
+    .heroSectionDescription{
+        font-size: medium;
+    }
+    .heroSectionHeader{
+        font-size: medium;
+    }
+    #heroSection{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(254, 248, 245);
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 15px 0px;
+}
+.hamburger {
+    display: block;
+    margin-right: -5px;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+transform: translateY(-8px) rotate(-45deg);
+}
+#navbarLinks {
+position: absolute;
+left: 100%;
+top: 10%;
+display: none;
+flex-direction: column;
+background-color:  black;
+width: 100vw;
+height: auto;
+text-align: center;
+}
+#navbarLinks a {
+    margin-right: 0px;
+}
+.nav-link {
+margin: 10px 0;
+padding: 20px 0px;
+transition: 1s ease-in-out;
+}
+.nav-link:hover{
+    background-color: rgb(50, 48, 48);
+}
+#navbarLinks.active{
+left: 0%;
+top: 55px;
+display: flex;
+transition: 1s;
+}
+}
+
+@media (max-width:350px){
+    #searchForm{
+        flex-direction: column;
+    }
+    .aboutSections{
+        padding: 15px 30px;
+    }
+}
