@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans';
 }
 body{
     background-color: rgb(243, 219, 185);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .error{
     text-align: center;
@@ -240,8 +239,5 @@ transition: 1s;
 @media (max-width:350px){
     #searchForm{
         flex-direction: column;
-    }
-    .aboutSections{
-        padding: 15px 20px;
     }
 }
