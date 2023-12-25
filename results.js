@@ -7,7 +7,6 @@ const searchBtn = document.getElementById("searchBtn");
 async function getRecipes(query){
     let response = await fetch(apiUrl + query + "&app_id=" + apiId + "&app_key=" + apiKey);
     var data = await response.json();
-    console.log(data)
     if (data.more == false){
         document.querySelector(".error").innerHTML = "Invalid"
         document.querySelector(".generalContainer").style.display = "none"
