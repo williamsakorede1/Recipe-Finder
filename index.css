@@ -268,11 +268,11 @@ transition: 1s;
 
 
 
-@media (max-width:350px){
+@media (max-width:450px){
     #searchForm{
         flex-direction: column;
     }
     .aboutSections{
-        padding: 15px 30px;
+        padding: 15px 15px;
     }
 }
