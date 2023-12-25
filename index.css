@@ -2,16 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans';
 }
-/* :root{
-    --
-} */
 body{
     background-color: rgb(243, 219, 185);
     overflow-x: hidden;
     width: 100vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Styling the Navbar */
@@ -274,6 +270,6 @@ transition: 1s;
         flex-direction: column;
     }
     .aboutSections{
-        padding: 15px 25px;
+        padding: 15px 30px;
     }
 }
