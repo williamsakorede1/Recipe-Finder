@@ -146,14 +146,18 @@ body{
 #contactUsSection .Header:hover{
     color: rgb(227, 210, 84) ;
 }
-#contactUs input:hover, #contactUs textarea:hover{
+#contactUs input:hover{
     border-radius: 5px;
     outline: 3px solid rgb(227, 210, 84);
 }
 
-#contactUs input::placeholder,#contactUs textarea::placeholder {
+#contactUs input::placeholder{
     font-weight: lighter;
     font-size: smaller;
+}
+#sendersMessage{
+    width: 100px;
+    height: 100px;
 }
 #sendButton{
     padding: 0px;
