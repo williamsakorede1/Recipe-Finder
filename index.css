@@ -155,10 +155,6 @@ body{
     font-weight: lighter;
     font-size: smaller;
 }
-#sendersMessage{
-    width: 100px;
-    height: 100px;
-}
 #sendButton{
     padding: 0px;
     width: 90px;
