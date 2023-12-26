@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Working with the body tag  */
+
 body{
     background-color: rgb(243, 219, 185);
     overflow-x: hidden;
@@ -11,6 +14,7 @@ body{
 }
 
 /* Styling the Navbar */
+
 #navbar {
     width: 100%;
     height: auto;
@@ -21,6 +25,7 @@ body{
     align-items: center;
     justify-content: space-around;
 }
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -38,7 +43,6 @@ body{
 .yellow{
     color: rgb(227, 210, 84);
 }
-/* Styling the navbar Links */
 #navbarLinks a{
     text-decoration: none;
     margin-right: 20px;
@@ -51,6 +55,7 @@ body{
     color: white;
 }
 /* Styling The Hero Section */
+
 #heroSection{
     width: 100vw;
     height: 50vh;
@@ -61,6 +66,7 @@ body{
 }
 
 /* Styling The Hero Section Children */
+
 #heroSectionText, #heroSectionImage{
     width: 45vw;
     height: 100%;
@@ -75,8 +81,6 @@ body{
     flex-direction:column ;
     font-size: x-large;
 }
-
-/* styling the heroSectionDescription and searchInput */
 .heroSectionDescription{
     font-size:large;
 }
@@ -93,30 +97,15 @@ body{
     outline: 2px solid black;
     outline-offset: 2px;
 }
-/* Styling search button */
 #heroSectionImage{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#searchBtn{
-    padding: 8px;
-    margin-top: px;
-    height: 30px;
-    background-color:rgb(250, 220, 118) ;
-    border: none;
-    border-radius: 5px;
-}
-#searchBtn:hover{
-    outline: 2px solid black;
-    outline-offset: 2px;
-}
-#getStartedBtn a {
-   cursor: pointer;
 
-}
 
 /* Styling The About App and Developers Section */
+
 .aboutSections{
     display: flex;
     justify-content: center;
@@ -129,6 +118,7 @@ body{
 }
 
 /* Styling The Contact Us Section */
+
 #contactUs{
     display: flex;
     justify-content: center;
@@ -138,8 +128,6 @@ body{
     background-color: black;
     padding: 10px 0px;
 }
-
-/* Styling The Contact Us input, textarea and button */
 #contactUs input{
     padding: 5px;
     padding-left: 8px;
@@ -177,12 +165,20 @@ body{
 #sendButton:hover{
     background-color: white;
 }
+
+
+/* Styling the footer section */
+
 .footer{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+
+/* Initializing the different screen size arrangement responsiveness */
+
+/* Size 750px downward */
 
 @media (max-width: 760px){
     #heroSectionImage img{
@@ -195,56 +191,59 @@ body{
         font-size: medium;
     }
     #heroSection{
-    width: 100vw;
-    height: 50vh;
-    background-color: rgb(254, 248, 245);
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    padding: 15px 0px;
+        width: 100vw;
+        height: 50vh;
+        background-color: rgb(254, 248, 245);
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        padding: 15px 0px;
+    }
+    .hamburger {
+        display: block;
+        margin-right: -5px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    #navbarLinks {
+        position: absolute;
+        left: 100%;
+        top: 10%;
+        display: none;
+        flex-direction: column;
+        background-color:  black;
+        width: 100vw;
+        height: auto;
+        text-align: center;
+    }
+    #navbarLinks a {
+        margin-right: 0px;
+    }
+    .nav-link {
+        margin: 10px 0;
+        padding: 20px 0px;
+        transition: 1s ease-in-out;
+    }
+    .nav-link:hover{
+        background-color: rgb(50, 48, 48);
+    }
+    #navbarLinks.active{
+        left: 0%;
+        top: 55px;
+        display: flex;
+        transition: 1s;
+    }
 }
-.hamburger {
-    display: block;
-    margin-right: -5px;
-}
-.hamburger.active .bar:nth-child(2){
-    opacity: 0;
-}
-.hamburger.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-}
-.hamburger.active .bar:nth-child(3){
-transform: translateY(-8px) rotate(-45deg);
-}
-#navbarLinks {
-position: absolute;
-left: 100%;
-top: 10%;
-display: none;
-flex-direction: column;
-background-color:  black;
-width: 100vw;
-height: auto;
-text-align: center;
-}
-#navbarLinks a {
-    margin-right: 0px;
-}
-.nav-link {
-margin: 10px 0;
-padding: 20px 0px;
-transition: 1s ease-in-out;
-}
-.nav-link:hover{
-    background-color: rgb(50, 48, 48);
-}
-#navbarLinks.active{
-left: 0%;
-top: 55px;
-display: flex;
-transition: 1s;
-}
-}
+
+/* Size 550px downward */
+
 @media(max-width: 550px){
     #heroSection{
         background: url(./heroSectionImagePhone.png);
@@ -264,12 +263,13 @@ transition: 1s;
 }
 
 
+/* Size 450px downward */
 
 @media (max-width:450px){
     #searchForm{
         flex-direction: column;
     }
     .aboutSections{
-        padding: 15px 30px;
+        padding: 15px 25px;
     }
 }
