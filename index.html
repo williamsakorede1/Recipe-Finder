@@ -61,11 +61,12 @@
     <!-- CONTACT US SECTION -->
 
     <section id="contactUsSection">
-    <form action="#" id="contactUs">
+    <form action="https://getform.io/f/9b44e72a-ea48-457f-8b09-e1027d005397" method="POST"
+    name="EmailForm" id="contactUs">
         <h2 class="Header">Contact Us</h2>
-        <input type="text" id="sendersName" placeholder="Enter your name">
-        <input type="email" id="sendersEmail" placeholder="Enter your email">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message to us"></textarea>
+        <input type="text" id="sendersName" placeholder="Enter your name" name="name" required>
+        <input type="email" id="sendersEmail" placeholder="Enter your email" name="email" required>
+        <input type="text" id="sendersMessage" placeholder="Enter your message to us" name="message" required></textarea>
         <button id="sendButton" type="submit"><img src="./send.png" alt="Send Message" width="30px" height="30px"></button>
     </form>
     </section>
