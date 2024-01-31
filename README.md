@@ -26,6 +26,6 @@ To get started with the Recipe Finder App, follow these steps:
 
 ## Feedback
 
-We'd love to hear your thoughts on the Recipe Finder App. If you have any suggestions or encounter issues, please [open an issue](https://github.com/your-username/recipe-finder-app/issues) on our GitHub repository.
+We'd love to hear your thoughts on the Recipe Finder App. If you have any suggestions or encounter issues, please [open an issue](https://github.com/williamsakorede1/Recipe-Finder/issues) on our GitHub repository.
 
 Happy cooking with the 4MidableRecipe Finder App! 🍳
