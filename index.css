@@ -5,7 +5,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Working with the body tag  */
+/* WORKING WITH THE BODY TAG  */
 
 body{
     background-color: rgb(243, 219, 185);
@@ -13,7 +13,7 @@ body{
     width: 100vw;
 }
 
-/* Styling the Navbar */
+/* STYLING THE NAVBAR */
 
 #navbar {
     width: 100%;
@@ -43,6 +43,9 @@ body{
 .yellow{
     color: rgb(227, 210, 84);
 }
+.yellow:hover{
+    color: white;
+}
 #navbarLinks a{
     text-decoration: none;
     margin-right: 20px;
@@ -54,7 +57,8 @@ body{
 #home span:hover{
     color: white;
 }
-/* Styling The Hero Section */
+
+/* STYLING THE HERO SECTION */
 
 #heroSection{
     width: 100vw;
@@ -65,7 +69,7 @@ body{
     padding: 15px 0px;
 }
 
-/* Styling The Hero Section Children */
+/* STYLING THE HERO SECTION CHILDREN */
 
 #heroSectionText, #heroSectionImage{
     width: 45vw;
@@ -103,8 +107,65 @@ body{
     justify-content: center;
 }
 
+/* STYLYING THE RECIPE DISPLAY SECTION */
 
-/* Styling The About App and Developers Section */
+#displayRecipes{
+    margin-top: 20px; ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.edit {
+    height: auto;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: ease-in-out 1s;
+}
+.edit:hover{
+    background-color: rgb(34, 33, 33);
+}
+.imageStyle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -6px;
+    margin-bottom: 15px;
+    
+}
+.imageStyle:hover{
+    outline: 4px dotted rgb(227, 210, 84);
+    outline-offset: 5px;
+}
+.headerStyle{
+    font-size: larger;
+}
+.linkStyle{
+    text-decoration: none;
+    background-color: rgb(227, 210, 84);
+    padding: 10px;
+    color: black;
+    transition: 1s;
+    font-weight: bold;
+}
+.linkStyle:hover{
+    background-color: rgb(50, 48, 48);
+    color: white;
+}
+
+
+/* STYLING THE ABOUT APP AND DEVELOPERS SECTIONS */
 
 .aboutSections{
     display: flex;
@@ -117,7 +178,57 @@ body{
     padding: 20px 70px;
 }
 
-/* Styling The Contact Us Section */
+/* STYLING THE MEET THE MEMBERS SECTION */
+
+.members{
+   margin: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.meetUsSectionHeader{
+    margin: 20px;
+    margin-bottom: -35px;
+    margin-top: 10px;
+    text-align: center;
+}
+.infoEdit{
+    width: 250px;
+    height: 320px;
+    background: black;
+    color: rgb(254, 248, 245);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    padding: 15px;
+    letter-spacing: 2px;
+    transition: ease-in-out 0.5s;
+}
+.infoEdit:hover{
+    background: rgb(34, 33, 33);
+}
+.infoEdit img{
+    width: 170px;
+    height: 170px;
+    outline: 3px dashed white;
+    outline-offset: 6px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    transition: ease-in-out 0.5s;
+}
+.infoEdit img:hover{
+    outline: 2px dashed rgb(227, 210, 84);
+}
+
+/* STYLING THE CONTACT US SECTION */
 
 #contactUs{
     display: flex;
@@ -146,7 +257,7 @@ body{
 #contactUsSection .Header:hover{
     color: rgb(227, 210, 84) ;
 }
-#contactUs input:hover{
+#contactUs input:hover, #sendersMessage:hover {
     border-radius: 5px;
     outline: 3px solid rgb(227, 210, 84);
 }
@@ -167,20 +278,22 @@ body{
 }
 
 
-/* Styling the footer section */
+/* STYLING THE FOOTER SECTION */
 
 .footer{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: bolder;
 }
 
 
-/* Initializing the different screen size arrangement responsiveness */
+/* INITIALIZING THE DIFFERENT SCREEN SIZE ARRANGEMENT RESPONSIVENESS */
 
-/* Size 750px downward */
 
-@media (max-width: 760px){
+/* Size 900px downward */
+
+@media (max-width: 900px){
     #heroSectionImage img{
         width: 300px;
     }
@@ -188,7 +301,7 @@ body{
         font-size: medium;
     }
     .heroSectionHeader{
-        font-size: medium;
+        font-size: x-large;
     }
     #heroSection{
         width: 100vw;
@@ -270,6 +383,6 @@ body{
         flex-direction: column;
     }
     .aboutSections{
-        padding: 15px 25px;
+        padding: 15px 40px;
     }
 }

@@ -3,11 +3,29 @@ const apiId = "5ae71f0e"
 const apiUrl = "https://api.edamam.com/search?q="
 const search = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
+const loadingIndicator = document.getElementById("loadingIndicator")
+
 
 async function getRecipes(query){
+
+    // Disable the button
+    searchBtn.disabled = true;
+
+  // Show loading indicator
+  loadingIndicator.style.display = 'block';
+
+  // Simulating a fetch request
+
     let response = await fetch(apiUrl + query + "&app_id=" + apiId + "&app_key=" + apiKey);
     var data = await response.json();
     console.log(data)
+
+    // Enable the button
+    searchBtn.disabled = false;
+
+    //Remove the loading indicator
+    loadingIndicator.style.display = 'none';
+
     if (data.more == false){
         document.querySelector(".error").innerHTML = "Invalid"
         document.querySelector(".generalContainer").style.display = "none"
@@ -104,5 +122,3 @@ async function getRecipes(query){
 searchBtn.onclick = function() {
     getRecipes(search.value)
 }
-
-// getRecipes("okra")
